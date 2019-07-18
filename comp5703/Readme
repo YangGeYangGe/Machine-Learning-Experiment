@@ -1,0 +1,15 @@
+Data source:
+    Download from:
+        https://forextester.com/data/datasources
+    We used AUDJPY and AUDUSD in our code, you may change to other pairs.
+
+How to run:
+    We used Google Colab in this project
+    Steps:
+        1. Create a directory named "21_4" in Google drive. 
+        2. Place all files and datasets in "21_4" directory.
+        3. Use Google Colab to run feature_selection.ipynb to select features.
+        4. Use Google Colab to run models.ipynb to get final results. Make sure Google colab
+        is in GPU mode.
+
+
