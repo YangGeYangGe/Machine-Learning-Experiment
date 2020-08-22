@@ -114,6 +114,7 @@ class HiddenLayer(object):
         )
         #dropout
         if (dropout != 1) and (output_layer == False):
+            # 除以dropout probability它会大致矫正或者补足你丢失的dropout%，以确保output的期望值仍然维持在同一水准
             u1 = np.random.binomial(1, dropout, size= self.output.shape[1])/dropout
             self.output *= u1
             self.u1 = u1
